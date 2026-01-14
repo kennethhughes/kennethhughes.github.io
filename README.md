@@ -1,14 +1,7 @@
-<header>
-  <h1>Kenneth Hughes</h1>
-  <p class="subtitle"> A living library
-</header>
-
-<section class="card">
-  <div class="card-overlay">
-    <h2>Writings</h2>
-    <p>Essays, books, and long form works.</p>
-    <span class="action">Explore</span>
-  </div>
+<head>
+  <meta charset="UTF-8">
+  <title>Kenneth Hughes -- Living Library</title>
+  <meta name="viewpoint" content="width=device-width, initial-scale-1.0">
   <style>
 body {
       margin: 0;
@@ -56,3 +49,15 @@ h1 {
       opacity: 1;
 }    
   </style>
+</head>
+<header>
+  <h1>Kenneth Hughes</h1>
+  <p class="subtitle"> A living library
+</header>
+
+<section class="card">
+  <div class="card-overlay">
+    <h2>Writings</h2>
+    <p>Essays, books, and long form works.</p>
+    <span class="action">Explore</span>
+  </div>
