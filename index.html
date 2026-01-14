@@ -1,0 +1,62 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Kenneth Hughes -- Living Library</title>
+  <meta name="viewpoint" content="width=device-width, initial-scale-1.0">
+  <style>
+body {
+      margin: 0;
+      padding: 60;
+      background-color: #0b0b0b;
+      color: #eaeaea;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+        "Segoe UI", sans-serif;
+  }
+    header {
+      margin-bottom: 80 px;
+}
+h1 {
+   font-size: 3 rem;
+   margin-bottom: 0.75;
+}
+    .subtitle {
+      opacity:0.75;
+}
+    .card {
+      width: 320 px;
+      height: 200 px;
+      background: url("https://via.placeholder.com/600x400") center/cover no-repeat;
+      position: relative;
+      border-radius: 8 px;
+      overflow: hidden;
+      cursor: pointer;
+}
+.card-overlay {
+      postition: absolute;
+      inset: 0;
+      background: rgba (0, 0, 0, 0.65);
+      opacity: 0;
+      transition: opacity 0.3 ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+}
+.card:hover .card-overlay {
+      opacity: 1;
+}
+    .action {
+      margine-top: 12 px;
+      font-weight: bold;
+      opacity: 1;
+}    
+  </style>
+</head>
+<header>
+  <h1>Kenneth Hughes</h1>
+  <p class="subtitle"> A living library
+</header>
+<section class="card">
+  <div class="card-overlay">
+    <h2>Writings</h2>
+    <p>Essays, books, and long form works.</p>
+    <span class="action">Explore</span>
+  </div>
