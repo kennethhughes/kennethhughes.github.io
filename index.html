@@ -1,64 +1,191 @@
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Kenneth Hughes -- Living Library</title>
-  <meta name="viewpoint" content="width=device-width, initial-scale-1.0">
-  <style>
-body {
-      margin: 0;
-      padding: 60;
-      background-color: #0b0b0b;
-      color: #eaeaea;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 
-        "Segoe UI", sans-serif;
-  }
-    header {
-      margin-bottom: 80 px;
-}
-h1 {
-   font-size: 3 rem;
-   margin-bottom: 0.75;
-}
-    .subtitle {
-      opacity:0.75;
-}
-    .card {
-      width: 320 px;
-      height: 200 px;
-      background: url("https://via.placeholder.com/600x400") center/cover no-repeat;
-      position: relative;
-      border-radius: 8 px;
-      overflow: hidden;
-      cursor: pointer;
-}
-.card-overlay {
-      postition: absolute;
-      inset: 0;
-      background: rgba (0, 0, 0, 0.65);
-      opacity: 0;
-      transition: opacity 0.3 ease;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-}
-.card:hover .card-overlay {
-      opacity: 1;
-}
-    .action {
-      margine-top: 12 px;
-      font-weight: bold;
-      opacity: 1;
-}    
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Living Library</title>
+<link rel="stylesheet" href="styles.css" />
 </head>
-<header>
-  <h1>Kenneth Hughes</h1>
-  <p class="subtitle"> A living library
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a class="brand" href="#">CreatorKen — Living Library</a>
+
+```
+  <nav class="nav">
+    <a href="#">Library</a>
+    <a href="#">Books</a>
+    <a href="#">Music</a>
+    <a href="#">Tools</a>
+    <a class="btn" href="#">Start Here</a>
+  </nav>
+</div>
+
+```
+
 </header>
-<section class="card">
-  <div class="card-overlay">
- <body>
-   <h2>Writings</h2>
-    <p>Essays, books, and long form works.</p>
-    <span class="action">Explore</span>
+
+<div class="container layout">
+<!-- Sidebar / Catalog Controls -->
+<aside class="sidebar">
+<div class="panel">
+<h3 class="panel-title">Search</h3>
+<input class="input" type="search" placeholder="Search titles, tags, notes…" />
+<p class="hint muted">Tip: keep tags short (1–2 words).</p>
+</div>
+
+```
+  <div class="panel">
+    <h3 class="panel-title">Collections</h3>
+    <a class="link" href="#">All</a>
+    <a class="link" href="#">Faith</a>
+    <a class="link" href="#">Wealth With Soul</a>
+    <a class="link" href="#">CrusadeR</a>
+    <a class="link" href="#">Brotherhood Club</a>
   </div>
-</body>
+
+  <div class="panel">
+    <h3 class="panel-title">Filters</h3>
+    <div class="chips">
+      <span class="chip">Book</span>
+      <span class="chip">Series</span>
+      <span class="chip">Guide</span>
+      <span class="chip">Music</span>
+      <span class="chip">Template</span>
+    </div>
+    <div class="divider"></div>
+    <div class="chips">
+      <span class="chip">In Progress</span>
+      <span class="chip">Published</span>
+      <span class="chip">Idea Bank</span>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3 class="panel-title">Featured Shelf</h3>
+    <p class="muted">Keep 1–3 items here that represent “the mission.”</p>
+  </div>
+</aside>
+
+<!-- Main -->
+<main class="main">
+  <section class="library-hero">
+    <div>
+      <h1 class="hero-title">Everything I’m building — in one place.</h1>
+      <p class="hero-subtitle">
+        Browse projects, series, tools, and experiments. No noise — just the catalog.
+      </p>
+    </div>
+    <div class="hero-actions">
+      <a class="btn" href="#">Newest</a>
+      <a class="btn ghost" href="#">By Category</a>
+      <a class="btn ghost" href="#">Random</a>
+    </div>
+  </section>
+
+  <!-- Featured row -->
+  <section class="shelf">
+    <h2 class="section-title">Featured</h2>
+    <div class="shelf-row">
+      <article class="card featured">
+        <div class="meta">
+          <span class="badge">Series</span>
+          <span class="status">In Progress</span>
+        </div>
+        <h3 class="card-title">Money Rebellion</h3>
+        <p class="muted">Wealth operators manual — practical, grounded, no guru fluff.</p>
+        <div class="tags">
+          <span class="tag">Wealth</span>
+          <span class="tag">Mindset</span>
+          <span class="tag">Systems</span>
+        </div>
+        <a class="link" href="#">Open →</a>
+      </article>
+
+      <article class="card featured">
+        <div class="meta">
+          <span class="badge">World</span>
+          <span class="status">Idea Bank</span>
+        </div>
+        <h3 class="card-title">CrusadeR</h3>
+        <p class="muted">Dark fantasy mythos: Riftlands, breaches, sigils, demon hunters.</p>
+        <div class="tags">
+          <span class="tag">Fantasy</span>
+          <span class="tag">Lore</span>
+          <span class="tag">Combat</span>
+        </div>
+        <a class="link" href="#">Open →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Catalog grid -->
+  <section>
+    <div class="section-head">
+      <h2 class="section-title">Catalog</h2>
+      <p class="muted">Use cards like “index entries.” Each card links to a detail page.</p>
+    </div>
+
+    <div class="grid">
+      <!-- Card template: copy/paste -->
+      <article class="card">
+        <div class="meta">
+          <span class="badge">Guide</span>
+          <span class="status">Published</span>
+        </div>
+        <h3 class="card-title">Quiet Confidence Scripts</h3>
+        <p class="muted">Boundary scripts + Notion upsell template.</p>
+        <div class="tags">
+          <span class="tag">Communication</span>
+          <span class="tag">Life</span>
+        </div>
+        <a class="link" href="#">Open →</a>
+      </article>
+
+      <article class="card">
+        <div class="meta">
+          <span class="badge">Music</span>
+          <span class="status">In Progress</span>
+        </div>
+        <h3 class="card-title">CrusadeR — Black Sigil Rising</h3>
+        <p class="muted">Concept album / story project built around the Riftlands.</p>
+        <div class="tags">
+          <span class="tag">Metal</span>
+          <span class="tag">Lore</span>
+        </div>
+        <a class="link" href="#">Open →</a>
+      </article>
+
+      <article class="card">
+        <div class="meta">
+          <span class="badge">Template</span>
+          <span class="status">Idea Bank</span>
+        </div>
+        <h3 class="card-title">Better Me 2026 Planner</h3>
+        <p class="muted">Simple planning system with low-friction routines.</p>
+        <div class="tags">
+          <span class="tag">Planning</span>
+          <span class="tag">Habits</span>
+        </div>
+        <a class="link" href="#">Open →</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+```
+
+</div>
+
+<footer class="site-footer">
+<div class="container footer-inner">
+<p class="muted">© <span id="year"></span> CreatorKen. Living Library.</p>
+<div class="footer-links">
+<a href="#">Contact</a>
+<a href="#">Subscribe</a>
+</div>
+</div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFu
