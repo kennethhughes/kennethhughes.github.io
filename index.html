@@ -22,18 +22,19 @@
     </ul>
   </div>
 </nav>
-
+</body>
   <header class="site-header">
 <div class="container header-inner">
 <a class="brand" href="#">CreatorKen — Living Library</a>
 
 ```
-  <nav class="nav">
-    <a href="#">Library</a>
-    <a href="#">Books</a>
-    <a href="#">Music</a>
-    <a href="#">Tools</a>
-    <a class="btn" href="#">Start Here</a>
+ <nav class="top-nav">
+  <a href="#catalog">Library</a>
+  <a href="#catalog" data-filter="Books">Books</a>
+  <a href="#catalog" data-filter="Music">Music</a>
+  <a href="#catalog" data-filter="Tools">Tools</a>
+  <a href="#start-here">Start Here</a>
+</nav>
   </nav>
 </div>
 
@@ -96,6 +97,54 @@
       <a class="btn" href="#">Newest</a>
       <a class="btn ghost" href="#">By Category</a>
       <a class="btn ghost" href="#">Random</a>
+      <!-- Top of page -->
+<body id="top">
+
+<!-- Search -->
+<section id="search">
+  <h3>Search</h3>
+  ...
+</section>
+
+<!-- Collections -->
+<section id="collections">
+  <h3>Collections</h3>
+  ...
+</section>
+
+<!-- Filters -->
+<section id="filters">
+  <h3>Filters</h3>
+  ...
+</section>
+
+<!-- Featured Shelf -->
+<section id="featured">
+  <h3>Featured Shelf</h3>
+  ...
+</section>
+
+<!-- Catalog -->
+<section id="catalog">
+  <h2>Catalog</h2>
+  ...
+</section>
+
+<!-- Start Here / About-ish section (if you have one) -->
+<section id="start-here">
+  ...
+</section>
+
+<!-- Footer / Subscribe -->
+<footer id="subscribe">
+  ...
+</footer>
+
+      <section id="library">...</section>
+<section id="collections">...</section>
+<section id="featured">...</section>
+<section id="about">...</section>
+<section id="subscribe">...</section>
     </div>
   </section>
 
